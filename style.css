@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: solid red 2px; */
 }
 
 .MainScreen {
@@ -403,8 +404,8 @@ h1 {
 
 
 .PersonalTeam {
-    background-position: top calc(-13.6vw + 339.42px) left calc(75.9vw - 0.857px);
-    background-image: url("./Img/Ellipse\ 13.svg");
+    background-position: top calc(-13.6vw + 339.42px) left calc(75.9vw - 0.857px) , top 348px left 571px , top 600px left 700px;
+    background-image: url("./Img/Ellipse\ 13.svg") , url("./Img/Ellipse\ 41.svg") , url("./Img/Ellipse\ 41.svg");
     background-repeat: no-repeat;
 }
 
@@ -444,40 +445,69 @@ h1 {
 }
 
 .pros {
+    position: absolute;
+    margin-top: calc(-15.6vw + 74px);
+    margin-left: 704px;
     display: grid;
-    grid-template-columns: 217px 179px; 
-    grid-template-rows: 156px 135px; 
-    gap: 17px 24px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 17px 25px;
 }
 
 .prositem {
     background-color: #DEE6EF; 
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    font-size: 2em; /* Размер текста */
+    /* font-size: 2em;  */
 }
 
 .clients {
-    grid-column: 1;
-    grid-row: 1;
+    width: 217px;
+    height: calc(5.5vw + 76.28px);
+}
+
+.clients p {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(114,71,255,1) 79%, rgba(188,167,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .years {
-    grid-column: 2;
-    grid-row: 1;
+    width: 179px;
+    height: 135px;
+}
+
+.years p {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(114,71,255,1) 79%, rgba(188,167,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .lawyers {
-    grid-column: 1;
-    grid-row: 2;
+    width: 179px;
+    height: 135px;
 }
 
-.Sirius {
-    grid-column: 2;
-    grid-row: 2;
+.lawyers p {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(114,71,255,1) 79%, rgba(188,167,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.system {
+    width: 192px;
+    height: 171px;
+}
+
+.system p {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(114,71,255,1) 79%, rgba(188,167,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 

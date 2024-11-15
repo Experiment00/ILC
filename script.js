@@ -1,26 +1,21 @@
-// const burgerButton = document.getElementById('burger-button');
-//     const burgerMenu = document.getElementById('burger-menu');
+const burgerBuTTon = document.getElementById('#burger-button');
+    const burgerMenu = document.getElementById('#burger-menu');
+    const body = document.body;
+
+    burgerBuTTon.addEventListener("click" , burgerButton);
+
+    function burgerButton(e) {
+      e.preventDefault();
+      // Переключаем стили элементов при клике
+      burger-menu.classList.toggle("open");
+      burger-button.classList.toggle("active");
+      body.classList.toggle("noscroll");
+      renderPopup();
+    }
 
 //     burgerButton.addEventListener('click', () => {
 //         burgerMenu.addEventListener.toggle('hidden'); 
 // });
-
-let burgerbutton = document.querySelector('.burger-button');
-burgerbutton.addEventListener('click', openPopUp);
-
-function openPopUp() {
-  let mob = document.querySelector('.burger-button');
-  mob.style.display = 'block';
-}
-
-let burgerbutton = document.querySelector('.burger-button');
-burgerbutton.addEventListener('click', hidePopUp);
-
-function hidePopUp() {
-  let mob = document.querySelector('.burger-button');
-  mob.style.display = 'none';
-}
-
 
 const vkontakteUrl = 'https://vk.com/';
 
